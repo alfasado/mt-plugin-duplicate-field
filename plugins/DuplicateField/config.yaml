@@ -1,0 +1,12 @@
+name: DuplicateField
+id  : DuplicateField
+key:  duplicatefield
+version: 0.1
+author_link: http://alfasado.net/
+author_name: Alfasado Inc.
+l10n_class: DuplicateField::L10N
+description: <__trans phrase="Add Duplicate button to Edit CustomField screen.">
+callbacks:
+    MT::App::CMS::template_source.edit_field: $duplicatefield::DuplicateField::Plugin::_edit_field
+    MT::App::CMS::template_param.edit_field: $duplicatefield::DuplicateField::Plugin::_edit_field_param
+
